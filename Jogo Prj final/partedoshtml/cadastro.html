@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro </title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+   
+    <center>
+        <h1>Cadastro de Jogos</h1>
+        <div id="cadastro">
+            <h2>Cadastro de Jogo</h2>
+            <form id="cadastroForm" enctype="multipart/form-data">
+                <label for="name"><b>Nome:</label>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="genero">Gênero:</label>
+                <input type="text" id="genero" name="genero" required><br><br>
+    
+                <label for="descrição">Descrição:</label>
+                <input type="text" id="descrição" name="descrição" required><br><br>
+    
+                <label for="squad">Squad:</label>
+                <input type="text" id="squad" name="squad" required><br><br>
+    
+                <label for="integrantes">Integrantes:</label>
+                <input type="text" id="integrantes" name="integrantes" required><br><br>
+    
+    
+                <label for="plataform">Plataforma:</label>
+                <input type="text" id="plataform" name="plataform" required><br><br>
+    
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" required><br><br>
+               
+                <label for="thumbnailpath">Thumbnail:</label>
+                <input type="text" id="thumbnailpath" name="thumbnailpath" required><br><br>
+             
+               
+                <button type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+                <button type="button" onclick="excluirJogo()">❌Excluir</button>
+            </form>
+             <div id="divimagem">
+                <h2>Lista de Jogos</h2><br>
+                <button type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+                <header>
+           
+                </header>
+    
+                <aside>
+                    <!-- Barra lateral, se necessário -->
+                 </aside>
+    
+                 <br>
+    
+                <main>
+                <table class="blueTable" id="jogos-tabela">
+                    <thead>
+                        <th>
+                            <p><tr>ID</tr></p>
+                            <p><tr>Nome do Jogo</tr></p>
+                            <p><tr>Gênero</tr></p>
+                            <p><tr>Descrição</tr></p>
+                            <p><tr>Squad</tr></p>
+                            <p><tr>Integrantes</tr></p>
+                            <p><tr>Plataforma</tr></p>
+                            <p><tr>URL</tr></p>
+                            <p><tr>Imagem</tr></p>
+                        </th></b>
+                    </thead>
+                    <tbody>
+                        <!-- A tabela de funcionários será carregada aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </center>
+        <script src="js/cadastro.js"></script>
+    </body>
+    
+</html>

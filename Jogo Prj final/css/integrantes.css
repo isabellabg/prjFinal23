@@ -1,0 +1,143 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+/* Elemento raiz (também conhecido como html) */
+:root {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  /* CSS Variaveis */
+  /* Fontes */
+  --ff-parisienne: "Parisienne", cursive;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-lora: "Lora", serif;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-rubik-dirt: "Rubik Dirt", cursive;
+  --fs-paragraphs: calc(0.8rem + 0.35vw);
+  --fs-links-btns: calc(0.65rem + 0.5vw);
+}
+
+/* Global */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body,
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 98%;
+  max-width: 91rem;
+  margin: 0 auto;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: gray;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--ff-montserrat);
+  font-size: 4vmin;
+}
+
+/* Integrantes */
+.contributors {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 0em;
+  padding: 5em 2em;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.concard {
+  background-color: #ffff;
+  padding: 0.2em 0.5em;
+  color: #222;
+  height: 12em;
+  width: 10em;
+  border-radius: 5px;
+  margin: 1.5em 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.concard:hover {
+  background-color: grey;
+  border-bottom: 5px solid #fff;
+  color: #fff;
+  transform: translateY(-7.5px);
+  transition: background-color 0.5s ease, transform 1s ease,
+    border-bottom 0.5s ease 0.2s;
+}
+
+.concard .pfp {
+  width: 50%;
+  border-radius: 100%;
+}
+.text {
+  margin: 1em 0em 0em 0em;
+  text-align: center;
+  font-size: 0.9em;
+}
+.text h1 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Teko", sans-serif;
+}
+.logolink {
+  margin: 0.6em 0em 0em 0em;
+  width: 25%;
+}
+.logolink img {
+  border-radius: 100%;
+  background-color: #ffff;
+}
+.logolink .github-logo {
+  width: 100%;
+}
+
+body {
+ background-color: black;
+  color: white;
+}
+
+
+
